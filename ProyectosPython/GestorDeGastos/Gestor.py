@@ -1,33 +1,20 @@
-from Gasto import *
+from gasto import Gasto
 
 class Gestor: 
     def __init__(self):
         self.gastos = []
 
-    def ingresarGasto(self):
-        while True:
-            gasto = str(input("Ingrese el nombre del gasto: "))
-            monto = float(input("Ingrese el valor del gasto: "))
-
-            g = Gasto(gasto, monto)
-
-            self.gastos.append(g)
-
-            print("Gasto ingresado correctamente")
-
-            seleccion = str.lower(input("Desea ingresar otro gasto (SI/NO): "))
-
-            if seleccion != "si":
-                print("adios...")
-                break
+    def agregar_gasto(self, gasto,monto):
+        g = Gasto(gasto,monto)
+        self.gastos.append(g)
     
-    def listaGastos(self):
+    def listar_gastos(self):
 
         for i in self.gastos:
             print(i)
 
 
-    def GastosTotales(self):
+    def calcular_total(self):
         total = 0
         for i in self.gastos:
             total += i.monto
