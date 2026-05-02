@@ -15,3 +15,4 @@ numeros.append(6)
 
 for numero in numeros:
     print(numero)
+

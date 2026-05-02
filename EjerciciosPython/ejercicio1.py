@@ -18,3 +18,11 @@ if edad >= 18:
     print("Puedes entrar")
 else:
     print("No puedes entrar")
+
+
+nombre = input("Ingrese su nombre: ")
+edad = int(input("Ingrese su edad: "))
+ciudad = input("Ingrese su  ciudad: ")
+
+print(f"Hola, soy {nombre} tengo {edad} años y vivo en {ciudad}")
+

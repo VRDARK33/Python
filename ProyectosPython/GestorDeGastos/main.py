@@ -18,7 +18,6 @@ def menu():
                     gasto  = input("ingrese el nombre del gasto: ")
                     try:
                         monto = float(input("ingrese el valor del monto: "))
-                        break
                     except ValueError:
                         print("ingrese un numero valido.")    
 

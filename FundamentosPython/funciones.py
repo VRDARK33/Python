@@ -1,6 +1,5 @@
 #una funcion es una forma de reutilizar codigo
 
-
 #forma de estrutura de una funcion sin parametros y con una impresion por consola
 
 def saludar():
@@ -22,3 +21,4 @@ def suma(a,b):
 
 resultado = suma(3,4)
 print(resultado)
+
